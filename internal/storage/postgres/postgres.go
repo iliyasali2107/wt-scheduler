@@ -14,6 +14,6 @@ func NewPostgresStorage() *PostgresStorage {
 	return &PostgresStorage{}
 }
 
-func (ps *PostgresStorage) CreateUser(ctx context.Context, user models.User) error {
-	return nil
+func (ps *PostgresStorage) CreateUser(ctx context.Context, user models.User) (models.User, error) {
+	return models.User{}, nil
 }
